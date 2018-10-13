@@ -1,0 +1,6 @@
+/**
+@defgroup    boards_dmn_meetstation DMN Meetstation
+@ingroup     boards
+@brief       Support for the DMN Meetstation
+@see         https://github.com/bergzand/dmn_meetstation
+ */
