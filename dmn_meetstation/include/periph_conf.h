@@ -114,7 +114,8 @@ static const i2c_conf_t i2c_config[] = {
  * @{
  */
 static const pwm_conf_t pwm_config[] = {
-    { NRF_PWM0,
+    {
+        NRF_PWM0,
         {
             GPIO_PIN(1, 4),
             GPIO_PIN(1, 9),
