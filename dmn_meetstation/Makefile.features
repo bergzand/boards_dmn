@@ -15,4 +15,6 @@ FEATURES_MCU_GROUP = cortex_m4_3
 
 -include $(RIOTCPU)/nrf52/Makefile.features
 
+# Various other features (if any)
+FEATURES_PROVIDED += radio_nrf802154
 FEATURES_PROVIDED += periph_pwm
