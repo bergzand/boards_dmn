@@ -44,6 +44,15 @@ extern "C" {
 /** @} */
 
 /**
+ * @name    HDC1080 humidity and temperature sensor configuration
+ * @{
+ */
+#ifndef HDC1000_I2C_ADDRESS
+#define HDC1000_I2C_ADDRESS      (0x40)
+#endif
+/** @} */
+
+/**
  * @brief   Initialize the platform
  */
 void board_init(void);
