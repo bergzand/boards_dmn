@@ -26,6 +26,24 @@ extern "C" {
 #endif
 
 /**
+ * @name    CCS811 gas sensor configuration
+ * @{
+ */
+#ifndef CCS811_PARAM_I2C_DEV
+#define CCS811_PARAM_I2C_DEV     (I2C_DEV(0))
+#endif
+#ifndef CCS811_PARAM_RESET_PIN
+#define CCS811_PARAM_RESET_PIN   (GPIO_PIN(1, 1))
+#endif
+#ifndef CCS811_PARAM_WAKE_PIN
+#define CCS811_PARAM_WAKE_PIN    (GPIO_PIN(1, 2))
+#endif
+#ifndef CCS811_PARAM_INT_PIN
+#define CCS811_PARAM_INT_PIN     (GPIO_PIN(1, 3))
+#endif
+/** @} */
+
+/**
  * @brief   Initialize the platform
  */
 void board_init(void);
