@@ -125,7 +125,6 @@ static const i2c_conf_t i2c_config[] = {
 #define I2C_NUMOF           (sizeof(i2c_config) / sizeof(i2c_config[0]))
 /** @} */
 
-#if defined(BOARD_NRF52DK) || defined(BOARD_NRF52840DK)
 /**
  * @name   PWM configuration
  * @{
@@ -143,8 +142,6 @@ static const pwm_conf_t pwm_config[] = {
 };
 #define PWM_NUMOF           (sizeof(pwm_config) / sizeof(pwm_config[0]))
 /** @} */
-
-#endif
 
 #ifdef __cplusplus
 }
