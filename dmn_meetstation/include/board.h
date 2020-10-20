@@ -19,6 +19,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include "board_common.h"
 #include "cpu.h"
 
 #ifdef __cplusplus
@@ -51,11 +52,6 @@ extern "C" {
 #define HDC1000_I2C_ADDRESS      (0x40)
 #endif
 /** @} */
-
-/**
- * @brief   Initialize the platform
- */
-void board_init(void);
 
 #ifdef __cplusplus
 }

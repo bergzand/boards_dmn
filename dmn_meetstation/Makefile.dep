@@ -1,10 +1,2 @@
-include $(RIOTCPU)/nrf52/Makefile.dep
-ifneq (,$(filter skald,$(USEMODULE)))
-  USEMODULE += nrfble
-endif
-
-ifneq (,$(filter gnrc_netdev_default netdev_default,$(USEMODULE)))
-  ifeq (,$(filter nrfmin,$(USEMODULE)))
-    USEMODULE += nrf802154
-  endif
-endif
+# include common nrf52 dependencies
+include $(RIOTBOARD)/common/nrf52/Makefile.dep
